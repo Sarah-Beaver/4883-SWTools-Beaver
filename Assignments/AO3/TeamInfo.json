@@ -1,0 +1,260 @@
+{
+    "MIN": {
+        "penalties": 907,
+        "penaltiesyard": 7561.0,
+        "win": 85,
+        "loss": 78
+    },
+    "CHI": {
+        "penalties": 967,
+        "penaltiesyard": 7992.0,
+        "win": 75,
+        "loss": 87
+    },
+    "SEA": {
+        "penalties": 1180,
+        "penaltiesyard": 9695.0,
+        "win": 102,
+        "loss": 71
+    },
+    "ARI": {
+        "penalties": 975,
+        "penaltiesyard": 7748.0,
+        "win": 82,
+        "loss": 81
+    },
+    "SD": {
+        "penalties": 762,
+        "penaltiesyard": 5856,
+        "win": 65,
+        "loss": 66
+    },
+    "TEN": {
+        "penalties": 962,
+        "penaltiesyard": 8078.0,
+        "win": 69,
+        "loss": 92
+    },
+    "DET": {
+        "penalties": 1028,
+        "penaltiesyard": 8392.0,
+        "win": 70,
+        "loss": 92
+    },
+    "DEN": {
+        "penalties": 1066,
+        "penaltiesyard": 8791.0,
+        "win": 96,
+        "loss": 73
+    },
+    "PIT": {
+        "penalties": 956,
+        "penaltiesyard": 8502.0,
+        "win": 107,
+        "loss": 62
+    },
+    "NE": {
+        "penalties": 949,
+        "penaltiesyard": 8252.0,
+        "win": 137,
+        "loss": 44
+    },
+    "BUF": {
+        "penalties": 1019,
+        "penaltiesyard": 8433.0,
+        "win": 66,
+        "loss": 94
+    },
+    "NYJ": {
+        "penalties": 976,
+        "penaltiesyard": 7944.0,
+        "win": 74,
+        "loss": 91
+    },
+    "KC": {
+        "penalties": 1005,
+        "penaltiesyard": 8004.0,
+        "win": 89,
+        "loss": 78
+    },
+    "ATL": {
+        "penalties": 852,
+        "penaltiesyard": 7285.0,
+        "win": 94,
+        "loss": 74
+    },
+    "CIN": {
+        "penalties": 990,
+        "penaltiesyard": 8222.0,
+        "win": 85,
+        "loss": 78
+    },
+    "HOU": {
+        "penalties": 1000,
+        "penaltiesyard": 8530.0,
+        "win": 83,
+        "loss": 84
+    },
+    "WAS": {
+        "penalties": 930,
+        "penaltiesyard": 7518.0,
+        "win": 63,
+        "loss": 97
+    },
+    "GB": {
+        "penalties": 961,
+        "penaltiesyard": 7959.0,
+        "win": 109,
+        "loss": 64
+    },
+    "DAL": {
+        "penalties": 1054,
+        "penaltiesyard": 8283.0,
+        "win": 91,
+        "loss": 75
+    },
+    "BAL": {
+        "penalties": 1070,
+        "penaltiesyard": 9013.0,
+        "win": 100,
+        "loss": 72
+    },
+    "CAR": {
+        "penalties": 914,
+        "penaltiesyard": 7620.0,
+        "win": 83,
+        "loss": 82
+    },
+    "JAC": {
+        "penalties": 566,
+        "penaltiesyard": 4652,
+        "win": 34,
+        "loss": 79
+    },
+    "TB": {
+        "penalties": 1047,
+        "penaltiesyard": 8354.0,
+        "win": 55,
+        "loss": 104
+    },
+    "PHI": {
+        "penalties": 1048,
+        "penaltiesyard": 8539.0,
+        "win": 92,
+        "loss": 75
+    },
+    "NO": {
+        "penalties": 964,
+        "penaltiesyard": 8331.0,
+        "win": 107,
+        "loss": 64
+    },
+    "MIA": {
+        "penalties": 904,
+        "penaltiesyard": 7552.0,
+        "win": 72,
+        "loss": 88
+    },
+    "CLE": {
+        "penalties": 953,
+        "penaltiesyard": 8019.0,
+        "win": 41,
+        "loss": 117
+    },
+    "IND": {
+        "penalties": 898,
+        "penaltiesyard": 7125.0,
+        "win": 94,
+        "loss": 77
+    },
+    "OAK": {
+        "penalties": 1195,
+        "penaltiesyard": 9657.0,
+        "win": 61,
+        "loss": 99
+    },
+    "SF": {
+        "penalties": 1052,
+        "penaltiesyard": 8386.0,
+        "win": 80,
+        "loss": 86
+    },
+    "STL": {
+        "penalties": 757,
+        "penaltiesyard": 6149,
+        "win": 37,
+        "loss": 74
+    },
+    "NYG": {
+        "penalties": 881,
+        "penaltiesyard": 7460.0,
+        "win": 78,
+        "loss": 86
+    },
+    "LAC": {
+        "penalties": 205,
+        "penaltiesyard": 1659.0,
+        "win": 21,
+        "loss": 12
+    },
+    "LA": {
+        "penalties": 311,
+        "penaltiesyard": 2616.0,
+        "win": 29,
+        "loss": 21
+    },
+    "JAX": {
+        "penalties": 332,
+        "penaltiesyard": 2924.0,
+        "win": 20,
+        "loss": 29
+    },
+    "CRT": {
+        "penalties": 3,
+        "penaltiesyard": 25,
+        "win": 0,
+        "loss": 1
+    },
+    "IRV": {
+        "penalties": 7,
+        "penaltiesyard": 49,
+        "win": 2,
+        "loss": 0
+    },
+    "SAN": {
+        "penalties": 2,
+        "penaltiesyard": 10,
+        "win": 0,
+        "loss": 1
+    },
+    "RIC": {
+        "penalties": 8,
+        "penaltiesyard": 40,
+        "win": 1,
+        "loss": 1
+    },
+    "AFC": {
+        "penalties": 8,
+        "penaltiesyard": 70,
+        "win": 4,
+        "loss": 2
+    },
+    "NFC": {
+        "penalties": 16,
+        "penaltiesyard": 97,
+        "win": 2,
+        "loss": 4
+    },
+    "NPR": {
+        "penalties": 3,
+        "penaltiesyard": 53.0,
+        "win": 0,
+        "loss": 1
+    },
+    "APR": {
+        "penalties": 4,
+        "penaltiesyard": 40.0,
+        "win": 1,
+        "loss": 0
+    }
+}
