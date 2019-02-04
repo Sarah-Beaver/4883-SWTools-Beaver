@@ -7,7 +7,7 @@ import json
 
 scraper = BeautifulScraper()
 years =[x for x in range(2009,2019)]
-weeks = [x for x in range(1,17)]
+weeks = [x for x in range(1,18)]
 
 stype="REG"
 
