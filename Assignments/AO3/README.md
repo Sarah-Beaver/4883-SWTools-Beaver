@@ -4,3 +4,7 @@
      * this pulls out each teams penalties, penalties yard, win, and losses and stores it into TeamInfo.json
 * TeamInfo.json
      * where the team info is stored
+* OrganizePlayers.py
+     * this pulls out each players teams, year for each team, rushes for loss, rushes yards for loss, pass for loss, and stores it into PlayerInfo.json
+* PlayerInfo.json
+     * where the player info is stored
