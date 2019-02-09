@@ -23,6 +23,9 @@
 
     
 Run scrape_nfl.py to get all the gameids and will put each gameid.json file into a ./Data folder and store the gameids in GameIds.json. 
+
 The users can then either download the remaining data structures or .json files and place them at same level as calculate_stats.py or can download OrganizeFieldGoals.py,OrganizePlayers.py, Valid_Teams.json, OrganizeTeams.py and follow the steps below.
-Running OrganizeFieldGoals.py and OrganizePlayers.py will pull all the gameid.json files from the ./Data folder and create the TeamInfo.json and PlayerInfo.json respectively. These files will be on the same level as the python files. Next make sure Valid_Teams.json is on the same level as the python files before running Organizeteams.py which will also use the gameid.json files from the ./Data folder to create the TeamInfo.json
+
+Running OrganizeFieldGoals.py and OrganizePlayers.py will pull all the gameid.json files from the ./Data folder and create the TeamInfo.json and PlayerInfo.json respectively. These files will be on the same level as the python files. Next make sure Valid_Teams.json is on the same level as the python files before running Organizeteams.py which will also use the gameid.json files from the ./Data folder to create the TeamInfo.json.
+
 Now the user can run calculate_stats.py which uses the .json files and the ./Data/{{gameid}}.json files to calculate the stats. The answer is then written to answer.txt.
