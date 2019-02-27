@@ -79,7 +79,7 @@ function printHeader($question,$pads,$cols){
  *    $pads = [4,14,20,5]
  */
 function formatRows($row,$pads){
-    $ouput = "";
+    $output = "";
     for($i=0;$i<sizeof($row);$i++){
         $output .= str_pad($row[$i],$pads[$i]);
     }
@@ -202,7 +202,6 @@ function displayQuery2($question,$sql,$cols,$pads,$coltitles){
                 }
                 echo formatRows($row, $pads);
                 $idcount++;
-                $yearcount++;
             }
         }   
         }
@@ -331,7 +330,7 @@ displayQuery($question,$sql,$cols,$pads,$colsTitle);
  * Question 11
  */
 $question = "11. Find the top 5 most common last names in the NFL.";
-$pads = [3,10,15,10];
+$pads = [3,10,15];
 $sql = "SELECT   validlastnames.lastname as lastname, count(validlastnames.lastname) as occurences FROM (SELECT  id, name, if(substring_index(name,'.',-1)='',substring_index(name,'.',-2),substring_index(name,'.',-1)) as lastname FROM `players`  group by id order by lastname) as validlastnames  group by validlastnames.lastname ORDER BY occurences DESC limit 5";
 $cols = ['id','lastname','occurences'];
 $colsTitle=['#','Name','Occurances'];
@@ -341,9 +340,9 @@ displayQuery($question,$sql,$cols,$pads,$colsTitle);
 /**
  * Bonus
  */
-echo "Bonus
+echo "<pre>\n\n\nBonus
 ==================================================================================
-";
+</pre>";
 $question = "12. Find the best 'away' team for every year.";
 $pads = [3,10,15,10];
 $sql = "SELECT `away_club`,season,(sum(if(win_type='away',1,0))/count(win_type))*100 as awaypercent FROM `games` group by season, away_club order by season,awaypercent desc";
