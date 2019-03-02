@@ -17,9 +17,7 @@ from PIL import Image, ImageDraw, ImageFont, ImageFilter
 def img_to_ascii(**kwargs):
     """ 
     The ascii character set we use to replace pixels. 
-    The grayscale pixel values are 0-255.
-    0 - 25 = '#' (darkest character)
-    250-255 = '.' (lightest character)
+    Tpulls the corresponding font from the fontstyle
     """
     ascii_chars = [ 'b', 'd', 'f', 'r', 'K', 'R', 'A', 'F', 'D', 'L', 'B']
 
@@ -33,6 +31,7 @@ def img_to_ascii(**kwargs):
 
    
     im = Image.open(path)
+    # uncomment below to let program run faster, resizing the image without skewing
     # im = resize(im,200)
     im.show()
     width,height = im.size
@@ -44,7 +43,7 @@ def img_to_ascii(**kwargs):
     newImg = Image.new('RGB', (width*fontsize//2,height*fontsize//2), (255,255,255))
     drawOnMe = ImageDraw.Draw(newImg)
 
-
+    # for each pixel in the picture it draws the correspong character in a correspondig position
     for i in range(height):
         for k in range(width):
             r,g,b=imagedata[count]
@@ -54,20 +53,6 @@ def img_to_ascii(**kwargs):
     
     newImg.show()
     newImg.save(output)
-  
-
-    # print(w,h)
-
-    # # im = im.convert("L") # convert to grayscale
-
-    # imlist = list(im.getdata())
-
-    # i = 1
-    # for val in imlist:
-    #     sys.stdout.write(ascii_chars[val // 25])
-    #     i += 1
-    #     if i % width == 0:
-    #         sys.stdout.write("\n")
 
     
 
@@ -87,6 +72,7 @@ def resize(img,width):
 
 
 if __name__=='__main__':
+    # checks if the user gave correct amount of inputs else uses defaults 
     if(len(sys.argv)==5):
         path =sys.argv[1]
         output=sys.argv[2]
@@ -102,5 +88,5 @@ if __name__=='__main__':
             img_to_ascii(path=path,output=output,font=font,fontsize=fontsize)
             sys.exit()
     print("Problem finding picture or font. Check path and try again")
-    # path = 'dragon.jpeg'
+
     
