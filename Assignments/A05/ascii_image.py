@@ -1,7 +1,3 @@
-import os.path
-import sys
-from PIL import Image, ImageDraw, ImageFont, ImageFilter
-
 # Course: cmps 4883
 # Assignemt: A04
 # Date: 3/1/19
@@ -11,8 +7,9 @@ from PIL import Image, ImageDraw, ImageFont, ImageFilter
 # Description: 
 #   taking a picture and recreating it using a font
 
-
-
+import os.path
+import sys
+from PIL import Image, ImageDraw, ImageFont, ImageFilter
 
 def img_to_ascii(**kwargs):
     """ 
@@ -28,7 +25,6 @@ def img_to_ascii(**kwargs):
     fontsize=kwargs.get('fontsize')
     output = kwargs.get('output')
     # width = kwargs.get('width',100)
-
    
     im = Image.open(path)
     # comment line below to stop resize or change 200 to resize differently, this resize will not skew image
@@ -55,7 +51,6 @@ def img_to_ascii(**kwargs):
     newImg.save(output)
 
     
-
 def resize(img,width):
     """
     This resizes the img while maintining aspect ratio. Keep in 
@@ -88,5 +83,3 @@ if __name__=='__main__':
             img_to_ascii(path=path,output=output,font=font,fontsize=fontsize)
             sys.exit()
     print("Problem finding picture or font. Check path and try again")
-
-    
