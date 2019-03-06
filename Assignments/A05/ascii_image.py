@@ -31,8 +31,8 @@ def img_to_ascii(**kwargs):
 
    
     im = Image.open(path)
-    # uncomment below to let program run faster, resizing the image without skewing
-    # im = resize(im,200)
+    # comment line below to stop resize or change 200 to resize differently, this resize will not skew image
+    im = resize(im,200)
     im.show()
     width,height = im.size
 
