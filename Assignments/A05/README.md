@@ -12,5 +12,5 @@ Download all the files. When running the python file please enter the path to im
 
 ascii_image.py takes an image and converts it to characters using a font.
 
-The program will automatically change the picture to resize to 200Xx where x is made so the image is not skewed. If this is not wanted go in and comment out im=resize(im,200)
+The program will automatically change the picture to resize to 200Xx where x is made so the image is not skewed. If this is not wanted go in and comment out im=resize(im,200). Also any font chosen should have the characters b, d, f, r, K, R, A, F, D, L, B as these are the characters used in this program.
 
