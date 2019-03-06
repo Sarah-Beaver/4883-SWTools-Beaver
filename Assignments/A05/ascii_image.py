@@ -14,7 +14,8 @@ from PIL import Image, ImageDraw, ImageFont, ImageFilter
 def img_to_ascii(**kwargs):
     """ 
     The ascii character set we use to replace pixels. 
-    Tpulls the corresponding font from the fontstyle
+    It pulls the corresponding font from the fontstyle
+    This takes an image and goes through and replaces it with characters from a font
     """
     ascii_chars = [ 'b', 'd', 'f', 'r', 'K', 'R', 'A', 'F', 'D', 'L', 'B']
 
