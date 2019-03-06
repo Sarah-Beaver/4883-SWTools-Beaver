@@ -80,7 +80,7 @@ if __name__=='__main__':
         fontsize=int(sys.argv[4])
     else:
         path='dragon.jpeg'
-        output='output.jpeg'
+        output='output.jpg'
         font='dPolyImperial.otf'
         fontsize=12
     if os.path.isfile(path):
