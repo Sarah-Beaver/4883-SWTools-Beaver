@@ -1,6 +1,6 @@
 """
 Course: cmps 4883
-Assignemt: A03
+Assignemt: A06
 Date: 3/05/19
 Github username: bluefire8421
 Repo url: https://github.com/bluefire8421/4883-SWTools-Beaver
