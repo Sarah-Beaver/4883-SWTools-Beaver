@@ -49,7 +49,7 @@ def newImage(imagepath,folderpath,resize):
     # converts and resize the image
 
     im=im.convert('RGBA').resize((width*resize,height*resize))
-    # im = Image.new('RGBA', (width*resize,height*resize), color = 'white')
+    #   im = Image.new('RGBA', (width*resize,height*resize), color = 'white')
     # opens ImageInfo.json, contains info about subimages
     with open('ImageInfo.json') as f:
         data = json.load(f)
