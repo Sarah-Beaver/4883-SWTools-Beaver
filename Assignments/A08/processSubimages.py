@@ -1,11 +1,11 @@
 # Course: cmps 4883
 # Assignemt: A07
-# Date: 3/11/19
+# Date: 3/30/19
 # Github username: bluefire8421
 # Repo url: https://github.com/bluefire8421/4883-SWTools-Beaver
 # Name: Sarah Beaver
 # Description: 
-#   takes a image and a folder then loops through folder to find the closest image
+#   assigns colors to images and puts info into json 
 
 
 import matplotlib.pyplot as plt
@@ -190,7 +190,7 @@ if __name__=='__main__':
             # loops through images in the directory
             for filename in os.listdir(args['folder']):
                 # returns dominant colors
-                colors=get_dominant_colors(args['folder']+'/'+filename,'output.jpg')
+                colors=get_dominant_colors(args['folder']+'/'+filename)
                 percent=colors[0]["percent"]
                 dist=1
                 # loops through the returned colors in first one
@@ -204,6 +204,7 @@ if __name__=='__main__':
                 
                 percent1=colors[1]["percent"]
                 dist=1
+                # assigns the colors into the list based on percent 0 highest 2 is lowest
                 for color in colors[1]["named_data"]["result"]:
                     if(color["dist"]<dist):
                         dist=color["dist"]
