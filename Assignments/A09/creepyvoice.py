@@ -1,6 +1,55 @@
 from pydub import AudioSegment
 from pydub.playback import play
+import requests
+import os,sys
+import pprint
+import json
+import re
 
-sound = AudioSegment.from_file(".//words_us/aaa_us.mp3", format="mp3")
-play(sound)
+def getSound(word):
+    try:
+        sound=AudioSegment.from_file(".//words_us/"+word+"_us.mp3", format="mp3")  
+        return sound  
+    except FileNotFoundError:
+        url_filename = "{}--_{}_1.mp3".format(word,"us")
+        # create save location with name
+        sav_filename = os.path.join("words","{}_{}.mp3".format(word,"us"))
+        url = "https://ssl.gstatic.com/dictionary/static/sounds/oxford/{}".format(url_filename) 
+        try:
+            r = requests.get(url)
+            with open(sav_filename, 'wb+') as f1:
+                f1.write(r.content)
+            with open('word_us_urls.txt', 'a') as f2:
+                f2.write(url+"\n")   
+        except Exception as e:
+            print("Problem requests or saving a file: "+word+" "+e)
+            return None
+        try:
+            sound=AudioSegment.from_file(".//words_us/"+word+"_us.mp3", format="mp3")
+            return sound
+        except:
+            print("Problem from_file():"+word)
+            return None
+    except:
+        print("Problem: "+word)
+        return None
+    return None
+
+while(1): 
+    phrase = input("--> ")
+    phrase=re.sub('[^a-zA-Z ]','',phrase)
+    if (phrase == "exit"):
+        exit(0)
+    words=phrase.split()
+    finalsound=getSound(words[0].lower())
+    for word in words[1:]:
+        sound=getSound(word.lower())
+        if sound!=None:
+            finalsound+=sound
+    play(finalsound)
+# sound = AudioSegment.from_file(".//words_us/a_us.mp3", format="mp3")
+# sound2 = AudioSegment.from_file(".//words_us/aardvark_us.mp3", format="mp3")
+
+# play(sound+sound2)
 print('yes')
+
