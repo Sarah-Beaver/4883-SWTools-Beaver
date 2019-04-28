@@ -35,11 +35,18 @@ def getSound(word):
         return None
     return None
 
-while(1): 
-    phrase = input("--> ")
+inputfile=None
+for arg in sys.argv[1:]:
+        k,v = arg.split('=')
+        if(k=="input_file"):
+            inputfile=v
+if(inputfile):
+    try:
+        phrase=open(inputfile,'r')
+        phrase=phrase.read()
+    except FileNotFoundError as e:
+        print("Problem with opening file: "+e)
     phrase=re.sub('[^a-zA-Z ]','',phrase)
-    if (phrase == "exit"):
-        exit(0)
     words=phrase.split()
     finalsound=getSound(words[0].lower())
     for word in words[1:]:
@@ -47,6 +54,20 @@ while(1):
         if sound!=None:
             finalsound+=sound
     play(finalsound)
+    
+else:
+    while(1): 
+        phrase = input("--> ")
+        phrase=re.sub('[^a-zA-Z ]','',phrase)
+        if (phrase == "exit"):
+            exit(0)
+        words=phrase.split()
+        finalsound=getSound(words[0].lower())
+        for word in words[1:]:
+            sound=getSound(word.lower())
+            if sound!=None:
+                finalsound+=sound
+        play(finalsound)
 # sound = AudioSegment.from_file(".//words_us/a_us.mp3", format="mp3")
 # sound2 = AudioSegment.from_file(".//words_us/aardvark_us.mp3", format="mp3")
 
