@@ -83,7 +83,7 @@ if(inputfile):
         sound=getSound(word.lower())
         if sound!=None:
             finalsound+=sound
-    print(slow)
+            
     if(slow == "yes"):
         finalsound = speed_change(finalsound,.75)
     elif(fast == "yes"):
